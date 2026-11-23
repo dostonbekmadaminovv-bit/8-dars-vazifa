@@ -1,7 +1,11 @@
 import React from "react";
-
+import ExploreSection from "../../components/ExploreSection";
 function PostsPage() {
-  return <div>PostsPage</div>;
+  return (
+    <div>
+      <ExploreSection />
+    </div>
+  );
 }
 
 export default PostsPage;
