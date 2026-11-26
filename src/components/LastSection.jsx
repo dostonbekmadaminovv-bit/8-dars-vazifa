@@ -1,6 +1,6 @@
 import { lastdataArr } from "./data/lastdata";
 import LastCard from "./LastCard";
-
+import { FaArrowRight } from "react-icons/fa";
 function LastSection() {
   return (
     <section className="w-full bg-[#fafbfc] px-6 py-20">
@@ -13,8 +13,8 @@ function LastSection() {
             </p>
           </div>
 
-          <button className="  rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm">
-            View All →
+          <button className=" flex items-center gap-1 rounded-lg border border-slate-200 bg-white px-6.5 py-3 text-sm">
+            View All <FaArrowRight />
           </button>
         </div>
 

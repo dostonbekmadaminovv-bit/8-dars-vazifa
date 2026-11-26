@@ -1,5 +1,5 @@
 import React from "react";
-import { CiSearch } from "react-icons/ci";
+import { IoSearch } from "react-icons/io5";
 
 function ExploreSection() {
   return (
@@ -10,10 +10,8 @@ function ExploreSection() {
           Discover amazing content from talented writers across various topics
         </p>
         <div>
-          <CiSearch />
-
           <input
-            className="w-xl text-gray-400 h-12 px-12.25 mt-8.25 bg-white border rounded-2xl border-[#E5E7EB]"
+            className="w-xl text-gray-400 h-12 px-12.25 mt-8.25 bg-white border-0 rounded-2xl border-[#E5E7EB]"
             type="search"
             placeholder="Search posts..."
           />

@@ -1,3 +1,5 @@
+import { FaArrowRight } from "react-icons/fa";
+
 function LastCard({ item }) {
   return (
     <article className="h-full overflow-hidden rounded-2xl border border-slate-200 bg-white">
@@ -28,9 +30,9 @@ function LastCard({ item }) {
 
         <a
           href={item.link || "#"}
-          className="text-base font-medium text-indigo-600"
+          className="text-base font-medium text-indigo-600 flex items-center gap-1"
         >
-          Read more →
+          Read more <FaArrowRight />
         </a>
       </div>
     </article>
