@@ -1,19 +1,25 @@
 import React from "react";
 import { IoSearch } from "react-icons/io5";
 
-function ExploreSection() {
+function ExploreSection({ search, setSearch }) {
   return (
-    <section className="bg-[#F7F1FD] w-full   h-94">
-      <div className="mx-w-300 items-center mx-auto text-center py-24 ">
-        <h2 className="font-bold text-4xl  leading-15">Explore Our Posts</h2>
-        <p className="text-[20px] leading-5 font-normal text-[#6B7280] mt-4">
+    <section className="w-full bg-[#F7F1FD] px-5 py-8">
+      <div className="mx-auto max-w-[1200px] text-center">
+        <h2 className="text-2xl font-bold leading-10">Explore Our Posts</h2>
+
+        <p className="mt-2 text-sm text-[#6B7280]">
           Discover amazing content from talented writers across various topics
         </p>
-        <div>
+
+        <div className="relative mx-auto mt-5 max-w-[450px]">
+          <IoSearch className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
+
           <input
-            className="w-xl text-gray-400 h-12 px-12.25 mt-8.25 bg-white border-0 rounded-2xl border-[#E5E7EB]"
             type="search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
             placeholder="Search posts..."
+            className="h-12 w-full rounded-xl border border-[#E5E7EB] bg-white pl-11 pr-4 text-sm outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100"
           />
         </div>
       </div>

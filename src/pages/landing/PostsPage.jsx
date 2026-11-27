@@ -1,11 +1,17 @@
-import React from "react";
+import { useState } from "react";
 import ExploreSection from "../../components/ExploreSection";
-function PostsPage() {
+import ExplorePost from "../../components/ExplorePostsSection";
+
+function Home() {
+  const [search, setSearch] = useState("");
+
   return (
-    <div>
-      <ExploreSection />
-    </div>
+    <>
+      <ExploreSection search={search} setSearch={setSearch} />
+
+      <ExplorePost search={search} />
+    </>
   );
 }
 
-export default PostsPage;
+export default Home;

@@ -12,6 +12,8 @@ import DetailPostPage from "./pages/landing/DetailPostPage";
 import CreatePost from "./pages/admin/CreatePost";
 import DashboardPage from "./pages/admin/DashboradPage";
 import LoginPage from "./pages/auth/LoginPage";
+//
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const routes = createBrowserRouter([
   {
@@ -20,8 +22,8 @@ const routes = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
 
-      { path: "posts", element: <PostPage /> },
-      { path: "detail", element: <DetailPostPage /> },
+      { path: "/posts", element: <PostPage /> },
+      { path: "/detail/:id", element: <DetailPostPage /> },
     ],
   },
   {
@@ -36,7 +38,11 @@ const routes = createBrowserRouter([
   },
   {
     path: "/admin",
-    element: <AdminLayout />,
+    element: (
+      <ProtectedRoute>
+        <AdminLayout />
+      </ProtectedRoute>
+    ),
     children: [
       {
         index: true,

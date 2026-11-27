@@ -1,12 +1,12 @@
 import HeroSection from "../../components/HeroSection.jsx";
 import WhyChooseSection from "../../components/WhyChooseSection.jsx";
-import LastSection from "../../components/LastSection.jsx";
+import LatestPost from "../../components/LatestPost.jsx";
 function HomePage() {
   return (
-    <div>
+    <div className="px-4">
       <HeroSection />
       <WhyChooseSection />
-      <LastSection />
+      <LatestPost />
     </div>
   );
 }
