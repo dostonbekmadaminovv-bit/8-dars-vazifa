@@ -142,7 +142,7 @@ export default function Login() {
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="hidden flex-col items-center justify-center bg-gradient-to-br from-indigo-50 via-violet-50 to-purple-50 px-6 lg:flex">
+      <div className="hidden flex-col items-center justify-center `bg-gradient-to-br` from-indigo-50 via-violet-50 to-purple-50 px-6 lg:flex">
         <img
           src={logoimg}
           alt="Start your journey"
