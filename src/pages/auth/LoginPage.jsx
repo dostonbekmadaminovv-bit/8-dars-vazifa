@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../../assets/images/Logo.svg";
+import logo from "../../assets/images/logo.svg";
 import logoimg from "../../assets/images/logo-img.png";
 
 export default function Login() {
